@@ -1,0 +1,2089 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_15eae4fcbba17bf2ef36ac5ea76c70a4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_15eae4fcbba17bf2ef36ac5ea76c70a4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_15eae4fcbba17bf2ef36ac5ea76c70a4 = L.map(
+                "map_15eae4fcbba17bf2ef36ac5ea76c70a4",
+                {
+                    center: [32.7157, -117.1611],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7910106628256d77d8b39231216de4c3 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7910106628256d77d8b39231216de4c3.addTo(map_15eae4fcbba17bf2ef36ac5ea76c70a4);
+        
+    
+            var marker_cluster_dc7ad366b163f29909b8113bbf73443f = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_293ed25128ea679d225f634398ea33ff = L.marker(
+                [32.921428, -117.1684415],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_8d0272bf09b7abfa3a53d6abdf9e7c09 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a49e89eccff9dab090a1802822fd9c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0de05536d09e2a14eca6f8ca2486da59 = $(`<div id="html_0de05536d09e2a14eca6f8ca2486da59" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>SIGNAL LIGHTS:CIRCULAR RED (I)</div>`)[0];
+                popup_3a49e89eccff9dab090a1802822fd9c1.setContent(html_0de05536d09e2a14eca6f8ca2486da59);
+            
+        
+
+        marker_293ed25128ea679d225f634398ea33ff.bindPopup(popup_3a49e89eccff9dab090a1802822fd9c1)
+        ;
+
+        
+    
+    
+                marker_293ed25128ea679d225f634398ea33ff.setIcon(icon_8d0272bf09b7abfa3a53d6abdf9e7c09);
+            
+    
+            var marker_64b53c139c52afa1f90a58f057628093 = L.marker(
+                [32.8190884, -117.2764809],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_4578283e8f7f62b28d8e8b91f6516444 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_732e976d38e9452b055d1a4d77ad6527 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd3da555de6040446efa958b85d915a9 = $(`<div id="html_fd3da555de6040446efa958b85d915a9" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>UNSAFE SPEED (BASIC SPEED LAW) (I)</div>`)[0];
+                popup_732e976d38e9452b055d1a4d77ad6527.setContent(html_fd3da555de6040446efa958b85d915a9);
+            
+        
+
+        marker_64b53c139c52afa1f90a58f057628093.bindPopup(popup_732e976d38e9452b055d1a4d77ad6527)
+        ;
+
+        
+    
+    
+                marker_64b53c139c52afa1f90a58f057628093.setIcon(icon_4578283e8f7f62b28d8e8b91f6516444);
+            
+    
+            var marker_b88cbb60d4bd97abe0c699cb23cc4a44 = L.marker(
+                [32.7380768, -117.2143012],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_1b96af5ae197c8b2fcc6719796cb691c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6342373da0d783825cc9b21a68d08970 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aed20e9524764ee5873ffd6923ff27cf = $(`<div id="html_aed20e9524764ee5873ffd6923ff27cf" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_6342373da0d783825cc9b21a68d08970.setContent(html_aed20e9524764ee5873ffd6923ff27cf);
+            
+        
+
+        marker_b88cbb60d4bd97abe0c699cb23cc4a44.bindPopup(popup_6342373da0d783825cc9b21a68d08970)
+        ;
+
+        
+    
+    
+                marker_b88cbb60d4bd97abe0c699cb23cc4a44.setIcon(icon_1b96af5ae197c8b2fcc6719796cb691c);
+            
+    
+            var marker_7bba6ef3ff43d3c86d567a2a7675dc7f = L.marker(
+                [32.979745, -117.153861],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_b1147371eeabc7d37eefc41921d051eb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea3d79cbb1d9d6661e114a3625a2e187 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bfbd861ab4176c0a10f93cf23e1b5945 = $(`<div id="html_bfbd861ab4176c0a10f93cf23e1b5945" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>UNSAFE SPEED (BASIC SPEED LAW) (I)</div>`)[0];
+                popup_ea3d79cbb1d9d6661e114a3625a2e187.setContent(html_bfbd861ab4176c0a10f93cf23e1b5945);
+            
+        
+
+        marker_7bba6ef3ff43d3c86d567a2a7675dc7f.bindPopup(popup_ea3d79cbb1d9d6661e114a3625a2e187)
+        ;
+
+        
+    
+    
+                marker_7bba6ef3ff43d3c86d567a2a7675dc7f.setIcon(icon_b1147371eeabc7d37eefc41921d051eb);
+            
+    
+            var marker_3470ccdd2f708bb7a72fdc9e8cce2680 = L.marker(
+                [32.7174202, -117.162772],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_b37443dd51ec08f22d9ab3fa7fc206b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_87e8951b45639eaf0b680e7c4e1789f1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7f261151c9150d8d31486269108b28ef = $(`<div id="html_7f261151c9150d8d31486269108b28ef" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>SIGNAL LIGHTS:CIRCULAR RED (I)</div>`)[0];
+                popup_87e8951b45639eaf0b680e7c4e1789f1.setContent(html_7f261151c9150d8d31486269108b28ef);
+            
+        
+
+        marker_3470ccdd2f708bb7a72fdc9e8cce2680.bindPopup(popup_87e8951b45639eaf0b680e7c4e1789f1)
+        ;
+
+        
+    
+    
+                marker_3470ccdd2f708bb7a72fdc9e8cce2680.setIcon(icon_b37443dd51ec08f22d9ab3fa7fc206b4);
+            
+    
+            var marker_3796cefacee299a53403e58feeb0804f = L.marker(
+                [33.0135742, -117.1475251],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_f9952e14e364bb7f152f4f10660528c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e45a32897b68e789ab7e14001cbb24fb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b3a4db77f412c8ee71a55dadea5cc8b = $(`<div id="html_5b3a4db77f412c8ee71a55dadea5cc8b" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>UNSAFE SPEED (BASIC SPEED LAW) (I)</div>`)[0];
+                popup_e45a32897b68e789ab7e14001cbb24fb.setContent(html_5b3a4db77f412c8ee71a55dadea5cc8b);
+            
+        
+
+        marker_3796cefacee299a53403e58feeb0804f.bindPopup(popup_e45a32897b68e789ab7e14001cbb24fb)
+        ;
+
+        
+    
+    
+                marker_3796cefacee299a53403e58feeb0804f.setIcon(icon_f9952e14e364bb7f152f4f10660528c0);
+            
+    
+            var marker_1d2a6de927552f642d48b94d3290ceef = L.marker(
+                [32.838999, -117.24758],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_8afa18eb756ae8bcdbeff2e1ded704be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_36e91e126fb31a53e5d655a682c20be7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c65310760435ed09becf01eedb8ef092 = $(`<div id="html_c65310760435ed09becf01eedb8ef092" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_36e91e126fb31a53e5d655a682c20be7.setContent(html_c65310760435ed09becf01eedb8ef092);
+            
+        
+
+        marker_1d2a6de927552f642d48b94d3290ceef.bindPopup(popup_36e91e126fb31a53e5d655a682c20be7)
+        ;
+
+        
+    
+    
+                marker_1d2a6de927552f642d48b94d3290ceef.setIcon(icon_8afa18eb756ae8bcdbeff2e1ded704be);
+            
+    
+            var marker_50b639fb95f7e9764fdad50005b77e6f = L.marker(
+                [32.7315121, -117.1523957],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_1a15221c60004d0af69a9f9c8c4108ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c5ee5b3793c5941f17b0d3b29c2793a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_153eb079ff7cacd3b94451638ebe205c = $(`<div id="html_153eb079ff7cacd3b94451638ebe205c" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_1c5ee5b3793c5941f17b0d3b29c2793a.setContent(html_153eb079ff7cacd3b94451638ebe205c);
+            
+        
+
+        marker_50b639fb95f7e9764fdad50005b77e6f.bindPopup(popup_1c5ee5b3793c5941f17b0d3b29c2793a)
+        ;
+
+        
+    
+    
+                marker_50b639fb95f7e9764fdad50005b77e6f.setIcon(icon_1a15221c60004d0af69a9f9c8c4108ba);
+            
+    
+            var marker_b38dcca3bd09feaa4292d52064d4c4a1 = L.marker(
+                [32.7665526, -117.1960174],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_fb77120857e719a8c48ddd6e0cfbc0f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2da052ff9908b5d73979bc6dbc3d313b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d4893f72ceb470a35506de5f90a4a79d = $(`<div id="html_d4893f72ceb470a35506de5f90a4a79d" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>TURNS:UNSAFE TURN AND/OR NO TURN SIGNAL (I)</div>`)[0];
+                popup_2da052ff9908b5d73979bc6dbc3d313b.setContent(html_d4893f72ceb470a35506de5f90a4a79d);
+            
+        
+
+        marker_b38dcca3bd09feaa4292d52064d4c4a1.bindPopup(popup_2da052ff9908b5d73979bc6dbc3d313b)
+        ;
+
+        
+    
+    
+                marker_b38dcca3bd09feaa4292d52064d4c4a1.setIcon(icon_fb77120857e719a8c48ddd6e0cfbc0f7);
+            
+    
+            var marker_970b24ba4d46fee48ca60bded03ef568 = L.marker(
+                [32.808082, -116.947703],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_f75d56c747bc16508f3b1eab6ad9bd5a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_46f048d001acb1469e4c075d5ce02b6e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1c01a6f1860c70ac5f901b0cf1d8c6b = $(`<div id="html_e1c01a6f1860c70ac5f901b0cf1d8c6b" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>UNSAFE SPEED (BASIC SPEED LAW) (I)</div>`)[0];
+                popup_46f048d001acb1469e4c075d5ce02b6e.setContent(html_e1c01a6f1860c70ac5f901b0cf1d8c6b);
+            
+        
+
+        marker_970b24ba4d46fee48ca60bded03ef568.bindPopup(popup_46f048d001acb1469e4c075d5ce02b6e)
+        ;
+
+        
+    
+    
+                marker_970b24ba4d46fee48ca60bded03ef568.setIcon(icon_f75d56c747bc16508f3b1eab6ad9bd5a);
+            
+    
+            var marker_9250e12418f5e1917aae949808aaf8e6 = L.marker(
+                [32.9055713, -117.1542374],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_4d0f61189ccf98da60b69c4fcf8205e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e64c24f42417ae41fb58e445a0397f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4709cd6e572946719da7a5ff7221dc71 = $(`<div id="html_4709cd6e572946719da7a5ff7221dc71" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>LANE USAGE:OPERATING BICYCLE ON WRONG SIDE OF ROAD (I)</div>`)[0];
+                popup_8e64c24f42417ae41fb58e445a0397f2.setContent(html_4709cd6e572946719da7a5ff7221dc71);
+            
+        
+
+        marker_9250e12418f5e1917aae949808aaf8e6.bindPopup(popup_8e64c24f42417ae41fb58e445a0397f2)
+        ;
+
+        
+    
+    
+                marker_9250e12418f5e1917aae949808aaf8e6.setIcon(icon_4d0f61189ccf98da60b69c4fcf8205e4);
+            
+    
+            var marker_1bf6cad243d616bc253f96b8c9f03836 = L.marker(
+                [32.7656927, -117.1516234],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_0cad3b33828e726105de06b1bef3407e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4cd6b7918ecc9fc30aff7dff75459fc4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87d02fc2f1092ee9299068e68ad1d84f = $(`<div id="html_87d02fc2f1092ee9299068e68ad1d84f" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>TURNS:UNSAFE TURN AND/OR NO TURN SIGNAL (I)</div>`)[0];
+                popup_4cd6b7918ecc9fc30aff7dff75459fc4.setContent(html_87d02fc2f1092ee9299068e68ad1d84f);
+            
+        
+
+        marker_1bf6cad243d616bc253f96b8c9f03836.bindPopup(popup_4cd6b7918ecc9fc30aff7dff75459fc4)
+        ;
+
+        
+    
+    
+                marker_1bf6cad243d616bc253f96b8c9f03836.setIcon(icon_0cad3b33828e726105de06b1bef3407e);
+            
+    
+            var marker_64ae6831394911da1b9e894683a07a3d = L.marker(
+                [32.964037, -117.11919],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_1fca5a06e102404c80fec508808b41b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c0a2f9edf4f66623209d932359b658b6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78cd3e06031183dc087692f939a10f91 = $(`<div id="html_78cd3e06031183dc087692f939a10f91" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>RIGHT-OF-WAY:ENTERING HWY (I)</div>`)[0];
+                popup_c0a2f9edf4f66623209d932359b658b6.setContent(html_78cd3e06031183dc087692f939a10f91);
+            
+        
+
+        marker_64ae6831394911da1b9e894683a07a3d.bindPopup(popup_c0a2f9edf4f66623209d932359b658b6)
+        ;
+
+        
+    
+    
+                marker_64ae6831394911da1b9e894683a07a3d.setIcon(icon_1fca5a06e102404c80fec508808b41b6);
+            
+    
+            var marker_bed520c666db5eb25e998f3fcd15a55f = L.marker(
+                [32.7778847, -117.1161306],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_0ff5558b47df83a5c554a865775e4f8b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64712befd3fc69cfb3f8de9dc501c987 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_276d22bfea720f1a1ef68adcb6efee7e = $(`<div id="html_276d22bfea720f1a1ef68adcb6efee7e" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>UNSAFE SPEED (BASIC SPEED LAW) (I)</div>`)[0];
+                popup_64712befd3fc69cfb3f8de9dc501c987.setContent(html_276d22bfea720f1a1ef68adcb6efee7e);
+            
+        
+
+        marker_bed520c666db5eb25e998f3fcd15a55f.bindPopup(popup_64712befd3fc69cfb3f8de9dc501c987)
+        ;
+
+        
+    
+    
+                marker_bed520c666db5eb25e998f3fcd15a55f.setIcon(icon_0ff5558b47df83a5c554a865775e4f8b);
+            
+    
+            var marker_2b056a207fa49871f5da71dd6082982f = L.marker(
+                [32.80805, -116.950586],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_43aa0cf8c2d0818f9b5297d4537a4d84 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_67d1a6abbccd164cb6592587a97c6ac3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03e51b445f37b04dcc7a422fefc21c8d = $(`<div id="html_03e51b445f37b04dcc7a422fefc21c8d" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>RIGHT-OF-WAY:MAKING LEFT OR U-TURN (I)</div>`)[0];
+                popup_67d1a6abbccd164cb6592587a97c6ac3.setContent(html_03e51b445f37b04dcc7a422fefc21c8d);
+            
+        
+
+        marker_2b056a207fa49871f5da71dd6082982f.bindPopup(popup_67d1a6abbccd164cb6592587a97c6ac3)
+        ;
+
+        
+    
+    
+                marker_2b056a207fa49871f5da71dd6082982f.setIcon(icon_43aa0cf8c2d0818f9b5297d4537a4d84);
+            
+    
+            var marker_2f483a1c832d66039ce16b0a8b379d14 = L.marker(
+                [32.8649874, -117.2310731],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_f0c4ba73124c9dc26378cfcf2f5ff3c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_93c081067697f5d516eb45a7d7396bd0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_165ab9e14bbc6f8f4ce9565bfac27189 = $(`<div id="html_165ab9e14bbc6f8f4ce9565bfac27189" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>LANE USAGE:OPERATING BICYCLE ON WRONG SIDE OF ROAD (I)</div>`)[0];
+                popup_93c081067697f5d516eb45a7d7396bd0.setContent(html_165ab9e14bbc6f8f4ce9565bfac27189);
+            
+        
+
+        marker_2f483a1c832d66039ce16b0a8b379d14.bindPopup(popup_93c081067697f5d516eb45a7d7396bd0)
+        ;
+
+        
+    
+    
+                marker_2f483a1c832d66039ce16b0a8b379d14.setIcon(icon_f0c4ba73124c9dc26378cfcf2f5ff3c5);
+            
+    
+            var marker_309693621fe412d2e873630fd9a334bf = L.marker(
+                [32.91345, -117.1737511],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_dbcc3bcd9e95a5d68f692bf82213acaf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81b89c012094d037458880b0df4d3a31 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a5b3e623fbf1afde1deb042c8f3ba2b5 = $(`<div id="html_a5b3e623fbf1afde1deb042c8f3ba2b5" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_81b89c012094d037458880b0df4d3a31.setContent(html_a5b3e623fbf1afde1deb042c8f3ba2b5);
+            
+        
+
+        marker_309693621fe412d2e873630fd9a334bf.bindPopup(popup_81b89c012094d037458880b0df4d3a31)
+        ;
+
+        
+    
+    
+                marker_309693621fe412d2e873630fd9a334bf.setIcon(icon_dbcc3bcd9e95a5d68f692bf82213acaf);
+            
+    
+            var marker_24dd3e58b41e3ee26acc3d81bf1ca3a1 = L.marker(
+                [32.969129, -117.238549],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_fe832d1e1ef5175a7c2a3041f9178eee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c0f4e637a297e6fb555a6f2b36d23ed = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f51b5724be643e4be397d04007ddba99 = $(`<div id="html_f51b5724be643e4be397d04007ddba99" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_4c0f4e637a297e6fb555a6f2b36d23ed.setContent(html_f51b5724be643e4be397d04007ddba99);
+            
+        
+
+        marker_24dd3e58b41e3ee26acc3d81bf1ca3a1.bindPopup(popup_4c0f4e637a297e6fb555a6f2b36d23ed)
+        ;
+
+        
+    
+    
+                marker_24dd3e58b41e3ee26acc3d81bf1ca3a1.setIcon(icon_fe832d1e1ef5175a7c2a3041f9178eee);
+            
+    
+            var marker_9a520face7e5e76407c9ddf95b9abe84 = L.marker(
+                [32.993698, -117.158257],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_8080a208d805d2192cdee172afd8c651 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3ff7775a3b3b7c6d9bb803e59337e2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fade66ccea82086dcba38a374ab63485 = $(`<div id="html_fade66ccea82086dcba38a374ab63485" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>UNSAFE SPEED (BASIC SPEED LAW) (I)</div>`)[0];
+                popup_d3ff7775a3b3b7c6d9bb803e59337e2e.setContent(html_fade66ccea82086dcba38a374ab63485);
+            
+        
+
+        marker_9a520face7e5e76407c9ddf95b9abe84.bindPopup(popup_d3ff7775a3b3b7c6d9bb803e59337e2e)
+        ;
+
+        
+    
+    
+                marker_9a520face7e5e76407c9ddf95b9abe84.setIcon(icon_8080a208d805d2192cdee172afd8c651);
+            
+    
+            var marker_a07ba9ac9719ee99152fbd7db5865a2d = L.marker(
+                [33.1734557, -117.3349048],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_ccf3dc5db9f778470127495b60a10f88 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9ff2ba8a9e7471446e6c9707a18b44d0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5dd7694ac9c669b4670325e921638436 = $(`<div id="html_5dd7694ac9c669b4670325e921638436" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>UNSAFE SPEED (BASIC SPEED LAW) (I)</div>`)[0];
+                popup_9ff2ba8a9e7471446e6c9707a18b44d0.setContent(html_5dd7694ac9c669b4670325e921638436);
+            
+        
+
+        marker_a07ba9ac9719ee99152fbd7db5865a2d.bindPopup(popup_9ff2ba8a9e7471446e6c9707a18b44d0)
+        ;
+
+        
+    
+    
+                marker_a07ba9ac9719ee99152fbd7db5865a2d.setIcon(icon_ccf3dc5db9f778470127495b60a10f88);
+            
+    
+            var marker_6e3c280f1db9a502671d9a44e10c36f5 = L.marker(
+                [32.9996643, -117.0862148],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_6cee2b18ea0a2b3dacd46d3c7d6b3709 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5dc668bb0d9bd946b010a38e1b21a77d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb76d1a9f865fd7b5aa1e25b4a72b098 = $(`<div id="html_bb76d1a9f865fd7b5aa1e25b4a72b098" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_5dc668bb0d9bd946b010a38e1b21a77d.setContent(html_bb76d1a9f865fd7b5aa1e25b4a72b098);
+            
+        
+
+        marker_6e3c280f1db9a502671d9a44e10c36f5.bindPopup(popup_5dc668bb0d9bd946b010a38e1b21a77d)
+        ;
+
+        
+    
+    
+                marker_6e3c280f1db9a502671d9a44e10c36f5.setIcon(icon_6cee2b18ea0a2b3dacd46d3c7d6b3709);
+            
+    
+            var marker_9db208ce820b06f09260b6f7cfef8772 = L.marker(
+                [32.969129, -117.238549],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_3c41d88b5ca3a47fd765fb244f70b683 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_66271aa72b941edc65d8bf3c2e9a71e4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eac78909f8c7203afa123869e149196c = $(`<div id="html_eac78909f8c7203afa123869e149196c" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>UNSAFE SPEED (BASIC SPEED LAW) (I)</div>`)[0];
+                popup_66271aa72b941edc65d8bf3c2e9a71e4.setContent(html_eac78909f8c7203afa123869e149196c);
+            
+        
+
+        marker_9db208ce820b06f09260b6f7cfef8772.bindPopup(popup_66271aa72b941edc65d8bf3c2e9a71e4)
+        ;
+
+        
+    
+    
+                marker_9db208ce820b06f09260b6f7cfef8772.setIcon(icon_3c41d88b5ca3a47fd765fb244f70b683);
+            
+    
+            var marker_5755cf038298a5545108651a43fff522 = L.marker(
+                [32.9834367, -117.2254434],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_7151915d2bd580f951362791c87bd91c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c43598eb4dea4c45b8fb00ae524cc0cf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f604a1fe20f10e08cf2496b14b3bcc48 = $(`<div id="html_f604a1fe20f10e08cf2496b14b3bcc48" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>TURNS:UNSAFE TURN AND/OR NO TURN SIGNAL (I)</div>`)[0];
+                popup_c43598eb4dea4c45b8fb00ae524cc0cf.setContent(html_f604a1fe20f10e08cf2496b14b3bcc48);
+            
+        
+
+        marker_5755cf038298a5545108651a43fff522.bindPopup(popup_c43598eb4dea4c45b8fb00ae524cc0cf)
+        ;
+
+        
+    
+    
+                marker_5755cf038298a5545108651a43fff522.setIcon(icon_7151915d2bd580f951362791c87bd91c);
+            
+    
+            var marker_394776bfd9884b06c1ac1b30987491e3 = L.marker(
+                [32.9524237, -117.1303975],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_d2eea63dae1821fcbce121854879eaf7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0389fe2f31e87cba1d227abace9099bc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85d737ae760c4d8c7788ab22fb75f5f6 = $(`<div id="html_85d737ae760c4d8c7788ab22fb75f5f6" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>FOLLOWING TOO CLOSELY (I)</div>`)[0];
+                popup_0389fe2f31e87cba1d227abace9099bc.setContent(html_85d737ae760c4d8c7788ab22fb75f5f6);
+            
+        
+
+        marker_394776bfd9884b06c1ac1b30987491e3.bindPopup(popup_0389fe2f31e87cba1d227abace9099bc)
+        ;
+
+        
+    
+    
+                marker_394776bfd9884b06c1ac1b30987491e3.setIcon(icon_d2eea63dae1821fcbce121854879eaf7);
+            
+    
+            var marker_5ae5d87a3cbf2152fba757fa0bb2a8aa = L.marker(
+                [32.9808687, -117.2427115],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_3a954210bb8b7837b3ed324f73a1e21d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b2e30c61e7946bfb89ae9ec84ec6cc1f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_efb2b824e3dd77631d0ee02ef4528e4d = $(`<div id="html_efb2b824e3dd77631d0ee02ef4528e4d" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>UNSAFE SPEED (BASIC SPEED LAW) (I)</div>`)[0];
+                popup_b2e30c61e7946bfb89ae9ec84ec6cc1f.setContent(html_efb2b824e3dd77631d0ee02ef4528e4d);
+            
+        
+
+        marker_5ae5d87a3cbf2152fba757fa0bb2a8aa.bindPopup(popup_b2e30c61e7946bfb89ae9ec84ec6cc1f)
+        ;
+
+        
+    
+    
+                marker_5ae5d87a3cbf2152fba757fa0bb2a8aa.setIcon(icon_3a954210bb8b7837b3ed324f73a1e21d);
+            
+    
+            var marker_2201cc8efd3cb2bdf23971299c48905b = L.marker(
+                [32.843038, -117.252353],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_83214dda49ad738489f22c01ba782bf8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5517cd07217ddcb4e01a110048987235 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_003df26bc04915e3bb24670c4c444b04 = $(`<div id="html_003df26bc04915e3bb24670c4c444b04" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>UNSAFE SPEED (BASIC SPEED LAW) (I)</div>`)[0];
+                popup_5517cd07217ddcb4e01a110048987235.setContent(html_003df26bc04915e3bb24670c4c444b04);
+            
+        
+
+        marker_2201cc8efd3cb2bdf23971299c48905b.bindPopup(popup_5517cd07217ddcb4e01a110048987235)
+        ;
+
+        
+    
+    
+                marker_2201cc8efd3cb2bdf23971299c48905b.setIcon(icon_83214dda49ad738489f22c01ba782bf8);
+            
+    
+            var marker_836672c56fdbb686ff8e5a17eeaa7fbd = L.marker(
+                [32.910886, -117.172246],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_c166e15419dc2707a5b9b32ab12d5881 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_01f4ae50df2c416bf9ca358acc2d4034 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_49ede9c8e288f1601a5e58da605f7a5c = $(`<div id="html_49ede9c8e288f1601a5e58da605f7a5c" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>TURNS:UNSAFE TURN AND/OR NO TURN SIGNAL (I)</div>`)[0];
+                popup_01f4ae50df2c416bf9ca358acc2d4034.setContent(html_49ede9c8e288f1601a5e58da605f7a5c);
+            
+        
+
+        marker_836672c56fdbb686ff8e5a17eeaa7fbd.bindPopup(popup_01f4ae50df2c416bf9ca358acc2d4034)
+        ;
+
+        
+    
+    
+                marker_836672c56fdbb686ff8e5a17eeaa7fbd.setIcon(icon_c166e15419dc2707a5b9b32ab12d5881);
+            
+    
+            var marker_3c0f119f33e7fcb984ec1f8fd7bc3a45 = L.marker(
+                [32.755054, -117.205096],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_d5daf4fe29c0d837738d8f68511597ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bae00cda28765436050863a796f7deec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb77db2118f9e21d598a5662a779c563 = $(`<div id="html_eb77db2118f9e21d598a5662a779c563" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>SIGNAL LIGHTS:CIRCULAR RED (I)</div>`)[0];
+                popup_bae00cda28765436050863a796f7deec.setContent(html_eb77db2118f9e21d598a5662a779c563);
+            
+        
+
+        marker_3c0f119f33e7fcb984ec1f8fd7bc3a45.bindPopup(popup_bae00cda28765436050863a796f7deec)
+        ;
+
+        
+    
+    
+                marker_3c0f119f33e7fcb984ec1f8fd7bc3a45.setIcon(icon_d5daf4fe29c0d837738d8f68511597ae);
+            
+    
+            var marker_9b50a9ff66491d31b9c99c95b5825f75 = L.marker(
+                [32.7318504, -117.149629],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_c75db6778e21e84711596b5993d22ade = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2dc7cef2210c228a65a1458507191a64 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6b33d70317d25b16bfb2cef31a69bf80 = $(`<div id="html_6b33d70317d25b16bfb2cef31a69bf80" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_2dc7cef2210c228a65a1458507191a64.setContent(html_6b33d70317d25b16bfb2cef31a69bf80);
+            
+        
+
+        marker_9b50a9ff66491d31b9c99c95b5825f75.bindPopup(popup_2dc7cef2210c228a65a1458507191a64)
+        ;
+
+        
+    
+    
+                marker_9b50a9ff66491d31b9c99c95b5825f75.setIcon(icon_c75db6778e21e84711596b5993d22ade);
+            
+    
+            var marker_b776a6ed3a9e0826a9db2d8d21eb6834 = L.marker(
+                [33.1941992, -117.3566058],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_bc15d83440be7757bc41837cb066ce36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db87b65e453e80eabceb71b150df1278 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_32e524a6cbb7b3f89ecc4477874a6c9f = $(`<div id="html_32e524a6cbb7b3f89ecc4477874a6c9f" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>UNSAFE SPEED (BASIC SPEED LAW) (I)</div>`)[0];
+                popup_db87b65e453e80eabceb71b150df1278.setContent(html_32e524a6cbb7b3f89ecc4477874a6c9f);
+            
+        
+
+        marker_b776a6ed3a9e0826a9db2d8d21eb6834.bindPopup(popup_db87b65e453e80eabceb71b150df1278)
+        ;
+
+        
+    
+    
+                marker_b776a6ed3a9e0826a9db2d8d21eb6834.setIcon(icon_bc15d83440be7757bc41837cb066ce36);
+            
+    
+            var marker_ae7d42209e364a9bcf212b37e856818c = L.marker(
+                [32.9491659, -117.1159813],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_50bb438bea5b944e770117c8348862a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d22b3fa12ac31a2312cd300530fb6da7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b20146910cf516f31727e6bba7d7dea2 = $(`<div id="html_b20146910cf516f31727e6bba7d7dea2" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>UNSAFE SPEED (BASIC SPEED LAW) (I)</div>`)[0];
+                popup_d22b3fa12ac31a2312cd300530fb6da7.setContent(html_b20146910cf516f31727e6bba7d7dea2);
+            
+        
+
+        marker_ae7d42209e364a9bcf212b37e856818c.bindPopup(popup_d22b3fa12ac31a2312cd300530fb6da7)
+        ;
+
+        
+    
+    
+                marker_ae7d42209e364a9bcf212b37e856818c.setIcon(icon_50bb438bea5b944e770117c8348862a1);
+            
+    
+            var marker_14573819343d796e2ac2c6130cbe4b61 = L.marker(
+                [32.9491659, -117.1159813],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_e16afbf5818c0a6ea3d73c71540fcd87 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d32a585326f46e6e9172a2d145b03c9c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb5510f42f77514c7a5c41cdcfed96eb = $(`<div id="html_eb5510f42f77514c7a5c41cdcfed96eb" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>UNSAFE SPEED (BASIC SPEED LAW) (I)</div>`)[0];
+                popup_d32a585326f46e6e9172a2d145b03c9c.setContent(html_eb5510f42f77514c7a5c41cdcfed96eb);
+            
+        
+
+        marker_14573819343d796e2ac2c6130cbe4b61.bindPopup(popup_d32a585326f46e6e9172a2d145b03c9c)
+        ;
+
+        
+    
+    
+                marker_14573819343d796e2ac2c6130cbe4b61.setIcon(icon_e16afbf5818c0a6ea3d73c71540fcd87);
+            
+    
+            var marker_47b7afad2d16cdb3c1b7ee5babe4b7c0 = L.marker(
+                [32.7591071, -117.1850261],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_2ba783c271eeea54755ea7732c999f14 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72113af3c472733e5f5ef25ded5b43c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0de094887f79e4e86747a6945c699914 = $(`<div id="html_0de094887f79e4e86747a6945c699914" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>RIGHT-OF-WAY:ENTERING HWY (I)</div>`)[0];
+                popup_72113af3c472733e5f5ef25ded5b43c6.setContent(html_0de094887f79e4e86747a6945c699914);
+            
+        
+
+        marker_47b7afad2d16cdb3c1b7ee5babe4b7c0.bindPopup(popup_72113af3c472733e5f5ef25ded5b43c6)
+        ;
+
+        
+    
+    
+                marker_47b7afad2d16cdb3c1b7ee5babe4b7c0.setIcon(icon_2ba783c271eeea54755ea7732c999f14);
+            
+    
+            var marker_dcb85fd75f614b365253c1e49095f776 = L.marker(
+                [32.9812624, -117.2350023],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_db67eb7c9b4fff53ef57882ff658318f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a15cf7360a444444ebbeb41ebf22732 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_595026a635389a646861ebf3598fa3e1 = $(`<div id="html_595026a635389a646861ebf3598fa3e1" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_6a15cf7360a444444ebbeb41ebf22732.setContent(html_595026a635389a646861ebf3598fa3e1);
+            
+        
+
+        marker_dcb85fd75f614b365253c1e49095f776.bindPopup(popup_6a15cf7360a444444ebbeb41ebf22732)
+        ;
+
+        
+    
+    
+                marker_dcb85fd75f614b365253c1e49095f776.setIcon(icon_db67eb7c9b4fff53ef57882ff658318f);
+            
+    
+            var marker_120a6f5fbda1db2264eaf032477eab8e = L.marker(
+                [33.017243, -117.128598],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_8fc93f0c66c601424b556f89837eae41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4582741b764582566609fe8e1bba835d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b59dba12c43def055207df176cdc661 = $(`<div id="html_4b59dba12c43def055207df176cdc661" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_4582741b764582566609fe8e1bba835d.setContent(html_4b59dba12c43def055207df176cdc661);
+            
+        
+
+        marker_120a6f5fbda1db2264eaf032477eab8e.bindPopup(popup_4582741b764582566609fe8e1bba835d)
+        ;
+
+        
+    
+    
+                marker_120a6f5fbda1db2264eaf032477eab8e.setIcon(icon_8fc93f0c66c601424b556f89837eae41);
+            
+    
+            var marker_705c603118e97fcab74a88c4397c0b8e = L.marker(
+                [33.1941992, -117.3566058],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_fbab9c8eadff4f40c764de80f5523d3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d9f4807e60503795567c101573397554 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ec55a2fd59b09ffc8b940d5e8f6c054 = $(`<div id="html_9ec55a2fd59b09ffc8b940d5e8f6c054" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_d9f4807e60503795567c101573397554.setContent(html_9ec55a2fd59b09ffc8b940d5e8f6c054);
+            
+        
+
+        marker_705c603118e97fcab74a88c4397c0b8e.bindPopup(popup_d9f4807e60503795567c101573397554)
+        ;
+
+        
+    
+    
+                marker_705c603118e97fcab74a88c4397c0b8e.setIcon(icon_fbab9c8eadff4f40c764de80f5523d3e);
+            
+    
+            var marker_1b16b8c8132a199d590e1f8f4c04093a = L.marker(
+                [33.02172, -117.128338],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_c7a1d63c784d0bbac1989b0e7ec08f9c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3124107b9c827ce6a7484b0e2816d862 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d9fa86c6f06c18b7b3148641b039553f = $(`<div id="html_d9fa86c6f06c18b7b3148641b039553f" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_3124107b9c827ce6a7484b0e2816d862.setContent(html_d9fa86c6f06c18b7b3148641b039553f);
+            
+        
+
+        marker_1b16b8c8132a199d590e1f8f4c04093a.bindPopup(popup_3124107b9c827ce6a7484b0e2816d862)
+        ;
+
+        
+    
+    
+                marker_1b16b8c8132a199d590e1f8f4c04093a.setIcon(icon_c7a1d63c784d0bbac1989b0e7ec08f9c);
+            
+    
+            var marker_291a995b240ab6119c5378e55101ba94 = L.marker(
+                [32.852073, -117.25817],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_0d2485140bfb806484862f6b8001aa36 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70e7eca88998d4dc0d5b4fde8cdca658 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb68a3d10e2624953fa8972e2b8d9a2e = $(`<div id="html_eb68a3d10e2624953fa8972e2b8d9a2e" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>UNSAFE SPEED (BASIC SPEED LAW) (I)</div>`)[0];
+                popup_70e7eca88998d4dc0d5b4fde8cdca658.setContent(html_eb68a3d10e2624953fa8972e2b8d9a2e);
+            
+        
+
+        marker_291a995b240ab6119c5378e55101ba94.bindPopup(popup_70e7eca88998d4dc0d5b4fde8cdca658)
+        ;
+
+        
+    
+    
+                marker_291a995b240ab6119c5378e55101ba94.setIcon(icon_0d2485140bfb806484862f6b8001aa36);
+            
+    
+            var marker_3fd3a59b56e83463e6374c6260909c4c = L.marker(
+                [32.7911065, -117.0983917],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_bd274a41dfc0dba95a9c721e6a46a73f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1bbc34be048d90a0ada7a0f3a5fba75c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_17fff096268cb748150527719c56a902 = $(`<div id="html_17fff096268cb748150527719c56a902" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_1bbc34be048d90a0ada7a0f3a5fba75c.setContent(html_17fff096268cb748150527719c56a902);
+            
+        
+
+        marker_3fd3a59b56e83463e6374c6260909c4c.bindPopup(popup_1bbc34be048d90a0ada7a0f3a5fba75c)
+        ;
+
+        
+    
+    
+                marker_3fd3a59b56e83463e6374c6260909c4c.setIcon(icon_bd274a41dfc0dba95a9c721e6a46a73f);
+            
+    
+            var marker_dd288c6493fe428aecf6393eabb7bbc5 = L.marker(
+                [32.566356, -117.049676],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_41dcadd6b5378e763dbebdfe251842c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d710ae25600a88ae9705dc5f4d4befb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_41931bdd28373dbf70ab033900b382bc = $(`<div id="html_41931bdd28373dbf70ab033900b382bc" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_0d710ae25600a88ae9705dc5f4d4befb.setContent(html_41931bdd28373dbf70ab033900b382bc);
+            
+        
+
+        marker_dd288c6493fe428aecf6393eabb7bbc5.bindPopup(popup_0d710ae25600a88ae9705dc5f4d4befb)
+        ;
+
+        
+    
+    
+                marker_dd288c6493fe428aecf6393eabb7bbc5.setIcon(icon_41dcadd6b5378e763dbebdfe251842c8);
+            
+    
+            var marker_15a510de40ba7668bd52b15c61eef5df = L.marker(
+                [33.007394, -117.147849],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_e3cf46d45dca1fd636ab95f100d4519f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_22bdeea2a1f6225e1ddbd315f8fe944c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a99c5aa9b50ab8ca8f11a9b4326d8ebf = $(`<div id="html_a99c5aa9b50ab8ca8f11a9b4326d8ebf" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>TURNS:UNSAFE TURN AND/OR NO TURN SIGNAL (I)</div>`)[0];
+                popup_22bdeea2a1f6225e1ddbd315f8fe944c.setContent(html_a99c5aa9b50ab8ca8f11a9b4326d8ebf);
+            
+        
+
+        marker_15a510de40ba7668bd52b15c61eef5df.bindPopup(popup_22bdeea2a1f6225e1ddbd315f8fe944c)
+        ;
+
+        
+    
+    
+                marker_15a510de40ba7668bd52b15c61eef5df.setIcon(icon_e3cf46d45dca1fd636ab95f100d4519f);
+            
+    
+            var marker_371b2574b3de1ee84685007d41baf711 = L.marker(
+                [32.755054, -117.205096],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_f3dbfec255d5c0576f8c8a19c03e806b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0233de6c8b599f1087ac2242d5d0bcc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_939d4b644c5e829a4d45469be9160d8c = $(`<div id="html_939d4b644c5e829a4d45469be9160d8c" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>TURNS:UNSAFE TURN AND/OR NO TURN SIGNAL (I)</div>`)[0];
+                popup_d0233de6c8b599f1087ac2242d5d0bcc.setContent(html_939d4b644c5e829a4d45469be9160d8c);
+            
+        
+
+        marker_371b2574b3de1ee84685007d41baf711.bindPopup(popup_d0233de6c8b599f1087ac2242d5d0bcc)
+        ;
+
+        
+    
+    
+                marker_371b2574b3de1ee84685007d41baf711.setIcon(icon_f3dbfec255d5c0576f8c8a19c03e806b);
+            
+    
+            var marker_9751b71a207ce7e78fc5e316e9aa674a = L.marker(
+                [32.5924738, -117.0738915],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_30d85c231dccbde6b4eb4a69dfe8be62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c125d8bac53289294a48cd0d6968684f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ccd470bef5ef0ea337c695adff8baa41 = $(`<div id="html_ccd470bef5ef0ea337c695adff8baa41" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>TURNS:UNSAFE TURN AND/OR NO TURN SIGNAL (I)</div>`)[0];
+                popup_c125d8bac53289294a48cd0d6968684f.setContent(html_ccd470bef5ef0ea337c695adff8baa41);
+            
+        
+
+        marker_9751b71a207ce7e78fc5e316e9aa674a.bindPopup(popup_c125d8bac53289294a48cd0d6968684f)
+        ;
+
+        
+    
+    
+                marker_9751b71a207ce7e78fc5e316e9aa674a.setIcon(icon_30d85c231dccbde6b4eb4a69dfe8be62);
+            
+    
+            var marker_6692c290f2687f3122c0d12942271034 = L.marker(
+                [32.6098886, -117.0816809],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_e5c3cd144987f403e3d0e3987951e6cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d4d8460c27f0d0a2f32423b76aa0ae1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d148fece8c18613cab839a45f76d4805 = $(`<div id="html_d148fece8c18613cab839a45f76d4805" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>LANE USAGE:OPERATING BICYCLE ON WRONG SIDE OF ROAD (I)</div>`)[0];
+                popup_6d4d8460c27f0d0a2f32423b76aa0ae1.setContent(html_d148fece8c18613cab839a45f76d4805);
+            
+        
+
+        marker_6692c290f2687f3122c0d12942271034.bindPopup(popup_6d4d8460c27f0d0a2f32423b76aa0ae1)
+        ;
+
+        
+    
+    
+                marker_6692c290f2687f3122c0d12942271034.setIcon(icon_e5c3cd144987f403e3d0e3987951e6cf);
+            
+    
+            var marker_a31745f1f0eb32e4935579c7294e6d19 = L.marker(
+                [32.852073, -117.25817],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_486d0d4176e798adba25246fe729b0f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0c04d02e531441c440542fcf0059e90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e2b79db537d17b5d7e9b0ed96385ac5a = $(`<div id="html_e2b79db537d17b5d7e9b0ed96385ac5a" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>TURNS:UNSAFE TURN AND/OR NO TURN SIGNAL (I)</div>`)[0];
+                popup_a0c04d02e531441c440542fcf0059e90.setContent(html_e2b79db537d17b5d7e9b0ed96385ac5a);
+            
+        
+
+        marker_a31745f1f0eb32e4935579c7294e6d19.bindPopup(popup_a0c04d02e531441c440542fcf0059e90)
+        ;
+
+        
+    
+    
+                marker_a31745f1f0eb32e4935579c7294e6d19.setIcon(icon_486d0d4176e798adba25246fe729b0f5);
+            
+    
+            var marker_dec0ddd272ec7e0221eaa270f989990b = L.marker(
+                [32.772073, -117.1369428],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_46848d45309dfcdd065b645f00b7110b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8fa9bfad3edb05523448d0a8a0ea7394 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_768e36909cad47563ab457e7602c28a9 = $(`<div id="html_768e36909cad47563ab457e7602c28a9" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>TURNS:UNSAFE TURN AND/OR NO TURN SIGNAL (I)</div>`)[0];
+                popup_8fa9bfad3edb05523448d0a8a0ea7394.setContent(html_768e36909cad47563ab457e7602c28a9);
+            
+        
+
+        marker_dec0ddd272ec7e0221eaa270f989990b.bindPopup(popup_8fa9bfad3edb05523448d0a8a0ea7394)
+        ;
+
+        
+    
+    
+                marker_dec0ddd272ec7e0221eaa270f989990b.setIcon(icon_46848d45309dfcdd065b645f00b7110b);
+            
+    
+            var marker_a69a10bb1d20e2dc90b6ba4223df1dd1 = L.marker(
+                [32.983033, -117.228571],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_9124dff5249682f9fc574b1c3c3c340f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff2b5042c4916a1d748cd465da9b75a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ae7afcffa81ffc1e926d221e2289ac9 = $(`<div id="html_9ae7afcffa81ffc1e926d221e2289ac9" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_ff2b5042c4916a1d748cd465da9b75a9.setContent(html_9ae7afcffa81ffc1e926d221e2289ac9);
+            
+        
+
+        marker_a69a10bb1d20e2dc90b6ba4223df1dd1.bindPopup(popup_ff2b5042c4916a1d748cd465da9b75a9)
+        ;
+
+        
+    
+    
+                marker_a69a10bb1d20e2dc90b6ba4223df1dd1.setIcon(icon_9124dff5249682f9fc574b1c3c3c340f);
+            
+    
+            var marker_b5856647f9d31d6108b093033903c359 = L.marker(
+                [32.944056, -117.23943],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_86b0bdc220eb7f96001fb0cbe1bffaa2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe84ee62ce276c22e0e87d02272b6c0e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ee819206d8267a149ba09ec71bfcf4c = $(`<div id="html_3ee819206d8267a149ba09ec71bfcf4c" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>BIKE LANE - UNSAFE MOVEMENT (I)</div>`)[0];
+                popup_fe84ee62ce276c22e0e87d02272b6c0e.setContent(html_3ee819206d8267a149ba09ec71bfcf4c);
+            
+        
+
+        marker_b5856647f9d31d6108b093033903c359.bindPopup(popup_fe84ee62ce276c22e0e87d02272b6c0e)
+        ;
+
+        
+    
+    
+                marker_b5856647f9d31d6108b093033903c359.setIcon(icon_86b0bdc220eb7f96001fb0cbe1bffaa2);
+            
+    
+            var marker_f51ac7c6b7307779b282ebb991291860 = L.marker(
+                [32.90831, -117.145275],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_a55ee8afc2c688d34c410c35d75bb3dd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5264664f92477941540327e3faa77c0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_492a38e6087dbe68de74ac626d13019d = $(`<div id="html_492a38e6087dbe68de74ac626d13019d" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>SIGNAL LIGHTS:CIRCULAR RED (I)</div>`)[0];
+                popup_e5264664f92477941540327e3faa77c0.setContent(html_492a38e6087dbe68de74ac626d13019d);
+            
+        
+
+        marker_f51ac7c6b7307779b282ebb991291860.bindPopup(popup_e5264664f92477941540327e3faa77c0)
+        ;
+
+        
+    
+    
+                marker_f51ac7c6b7307779b282ebb991291860.setIcon(icon_a55ee8afc2c688d34c410c35d75bb3dd);
+            
+    
+            var marker_fd572295c894d8191fdc58d2f6469012 = L.marker(
+                [32.755054, -117.205096],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_ae98fd9fbdc60f83380b2ccc2cab6b4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12ddc5ea3d5822c5c56ed0ffd1db2086 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a82aac864f613cb5697da670c18b3b0 = $(`<div id="html_7a82aac864f613cb5697da670c18b3b0" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>TURNS:UNSAFE TURN AND/OR NO TURN SIGNAL (I)</div>`)[0];
+                popup_12ddc5ea3d5822c5c56ed0ffd1db2086.setContent(html_7a82aac864f613cb5697da670c18b3b0);
+            
+        
+
+        marker_fd572295c894d8191fdc58d2f6469012.bindPopup(popup_12ddc5ea3d5822c5c56ed0ffd1db2086)
+        ;
+
+        
+    
+    
+                marker_fd572295c894d8191fdc58d2f6469012.setIcon(icon_ae98fd9fbdc60f83380b2ccc2cab6b4a);
+            
+    
+            var marker_352f01669a6a73236060617e961d19c6 = L.marker(
+                [33.01911, -117.139402],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_1e4fa7063bd2c69a2fa8b6e0ef983d4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ccd2fff9faee9ac75957321cc718de6d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f5ac1fec50c1af1d74b1b2ec458ffe2 = $(`<div id="html_9f5ac1fec50c1af1d74b1b2ec458ffe2" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_ccd2fff9faee9ac75957321cc718de6d.setContent(html_9f5ac1fec50c1af1d74b1b2ec458ffe2);
+            
+        
+
+        marker_352f01669a6a73236060617e961d19c6.bindPopup(popup_ccd2fff9faee9ac75957321cc718de6d)
+        ;
+
+        
+    
+    
+                marker_352f01669a6a73236060617e961d19c6.setIcon(icon_1e4fa7063bd2c69a2fa8b6e0ef983d4d);
+            
+    
+            var marker_703ff81ab537a910696559286ca977d4 = L.marker(
+                [32.9502813, -117.235267],
+                {
+}
+            ).addTo(marker_cluster_dc7ad366b163f29909b8113bbf73443f);
+        
+    
+            var icon_fa7bbe180fc5aa05c9ec22d8cdd301bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_14b22c06b54ab9824877d9ffb7307489 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4c1e9ef88c3dca2a8e1ea68f14d685e9 = $(`<div id="html_4c1e9ef88c3dca2a8e1ea68f14d685e9" style="width: 100.0%; height: 100.0%;"><b>Charge:</b><br>MISCELLANEOUS HAZARDOUS VIOLATIONS OF THE VEHICLE CODE</div>`)[0];
+                popup_14b22c06b54ab9824877d9ffb7307489.setContent(html_4c1e9ef88c3dca2a8e1ea68f14d685e9);
+            
+        
+
+        marker_703ff81ab537a910696559286ca977d4.bindPopup(popup_14b22c06b54ab9824877d9ffb7307489)
+        ;
+
+        
+    
+    
+                marker_703ff81ab537a910696559286ca977d4.setIcon(icon_fa7bbe180fc5aa05c9ec22d8cdd301bf);
+            
+    
+            marker_cluster_dc7ad366b163f29909b8113bbf73443f.addTo(map_15eae4fcbba17bf2ef36ac5ea76c70a4);
+        
+</script>
+</html>
